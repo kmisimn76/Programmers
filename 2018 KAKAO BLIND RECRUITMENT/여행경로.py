@@ -19,6 +19,7 @@ def next_ticket(tickets, disable, start, answer):
 def solution(tickets):
     answer = []
     disable = [0 for i in range(len(tickets))]
+    # below equal to : tickets.sort(key=itemgetter(0,1))
     tickets.sort(key=itemgetter(1))
     tickets.sort(key=itemgetter(0))
     print(tickets)
